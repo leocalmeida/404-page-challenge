@@ -6,14 +6,15 @@
 }
 
 body {
-  margin: 0 auto;
   display: flex;
-  flex-direction: column;
+  max-width: 1440px;
+  max-height: 1080px;
 }
 
 div header {
-  padding-top: 20px;
-  margin-left: 5%;
+  margin-bottom: 8.6vh;
+  margin-top: 2.7vh;
+  margin-left: 3.23vh;
   font-family: "Inconsolata", monospace;
   font-style: normal;
   font-weight: bold;
@@ -24,58 +25,71 @@ div header {
   color: #333333;
 }
 
+@media (min-width: 600px) {
+  div section {
+    margin-top: 15vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  div section img {
+    margin-left: 3.23vh;
+    width: 45vw;
+  }
+  div section .right {
+    margin-right: 3.23vh;
+    max-width: 45vw;
+  }
+  div section .right h1 {
+    font-size: 64px;
+    line-height: 95px;
+  }
+  div section .right p {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+@media (max-width: 600px) {
+  div section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  div section .right h1 {
+    font-size: 48px;
+    line-height: 71px;
+  }
+  div section .right p {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
 div section {
-  /* margin-top: 100px; */
-  /* margin-bottom: 150px; */
-  /* width: 90%; */
-  /* margin-left: 77px; */
-  /* max-width: 1244px; */
-  /* min-width: 560px; */
   font-family: "Space Mono", monospace;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
-div section .left {
-  width: 375px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* margin-left: 77px; */
-}
-div section .left img {
-  width: 80%;
-  /* max-width: 600px; */
-  /* margin-left: 77px; */
-  /* margin-right: 100px; */
+div section img {
+  max-width: 80vw;
 }
 
 div section .right {
-  width: 375px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  /* margin-right: 119px; */
-  /* width: 80%; */
-  /* max-width: 600px; */
-  /* margin-left: 77px; */
-  /* margin-right: 77px; */
 }
 
 div section .right h1 {
-  /* width: 586px; */
-
-  text-align: left;
+  margin-left: 5vw;
+  margin-bottom: 3.29vh;
+  font-family: "Space Mono", monospace;
   font-style: normal;
   font-weight: bold;
-  font-size: 60px;
-  line-height: 95px;
+
   letter-spacing: -0.035em;
-  margin-bottom: 36px;
 
   /* Gray 1 */
 
@@ -83,14 +97,14 @@ div section .right h1 {
 }
 
 div section .right p {
-  margin: 0px 10px;
-  /* text-align: justify; */
+  margin-left: 5vw;
+
+  margin-bottom: 9vh;
+  font-family: Space Mono;
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
-  line-height: 36px;
+
   letter-spacing: -0.035em;
-  margin-bottom: 64px;
 
   /* Gray 2 */
 
@@ -98,6 +112,9 @@ div section .right p {
 }
 
 div section .right button {
+  margin-left: 5vw;
+
+  align-self: flex-start;
   font-family: "Space Mono", monospace;
   width: 216px;
   height: 68px;
@@ -119,12 +136,17 @@ div section .right button:hover {
 }
 
 div footer {
-  font-family: "Montserrat", sans-serif;
+  padding-top: 20vh;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 div footer span {
-  margin-bottom: 15px;
+  margin-bottom: 5vh;
 }
