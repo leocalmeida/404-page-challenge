@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+}
+
+header {
+  margin-top: 40px;
+  margin-left: 77px;
+  font-family: "Inconsolata", monospace;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 25px;
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+section {
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 150px;
+  width: 1244px;
+  font-family: "Space Mono", monospace;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section .left {
+  /* margin-left: 77px; */
+}
+section .left img {
+  width: 539.22px;
+  /* margin-right: 100px; */
+}
+
+section .right {
+  /* margin-right: 119px; */
+}
+
+section .right h1 {
+  width: 586px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 95px;
+  letter-spacing: -0.035em;
+  margin-bottom: 36px;
+
+  /* Gray 1 */
+
+  color: #333333;
+}
+
+section .right p {
+  width: 381px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.035em;
+  margin-bottom: 64px;
+
+  /* Gray 2 */
+
+  color: #4f4f4f;
+}
+
+section .right button {
+  font-family: "Space Mono", monospace;
+  width: 216px;
+  height: 68px;
+  background-color: #333333;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+}
+
+section .right button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+footer {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer span {
+  /* margin-top: 250px; */
+}
